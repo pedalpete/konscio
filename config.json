@@ -1,0 +1,1 @@
+[{"type":"led","pin":16,"attr":{ "color":"red"}},{"type":"led","pin":15,"attr":{"color":"green"}},{"type":"led","pin":18,"attr":{"color":"green"}}]
