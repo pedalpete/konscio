@@ -39,7 +39,7 @@ var $$=function(el){
 		var el_obj = this.decode_element(el);
 		console.log(el_obj);
 		for(i in config){
-			if(config[i].type==el){
+			if(config[i].type==el_obj.element){
 				element=config[i];
 			console.log(element.pin);
 			return element;
