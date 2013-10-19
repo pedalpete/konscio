@@ -1,16 +1,43 @@
 var fs = require("fs");
 var gpio = require("pi-gpio");
+var _ = require("underscore");
 
 console.log("getting config");
 
 var config = JSON.parse(fs.readFileSync("./config.json"));
-console.log(config);
+
 var element;
 
 var $$=function(el){
 
+	decode_element = function(el){
+		var splitter = /(?=\.|#|\[|\.|[a-zA-Z0-9]+;)/gi
+		var el_array = el.split(splitter);
+		console.log(el_array);
+		var el_obj = {attr:[]};
+		console.log(el.split(splitter));
+		//build an object of the element
+		for(i in el_array){
+			var in_el=el_array[i];
+			console.log(in_el);
+			var split_in_el = in_el.split(/(#|\.|\[)/);
+			console.log(split_in_el);
+			if(split_in_el.length>1){
+				if(split_in_el[0]==='['){
+					console.log(in_el);
+					el_obj.attr.push(split_in_el[0]);
+				}
+			} else {
+				el_obj['element']=in_el;
+			}
+		}
+		
+		return el_obj;
+	},
 	getElement=function(el){
-		console.log(el);
+		
+		var el_obj = this.decode_element(el);
+		console.log(el_obj);
 		for(i in config){
 			if(config[i].type==el){
 				element=config[i];

@@ -1,6 +1,6 @@
 var $$=require("./module/module.js");
 console.log("starting");
-$$("led").on();
+$$("led.first#last[color:blue]").on();
 
 setTimeout(function(){
 	$$("led").off();
