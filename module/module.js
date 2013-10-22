@@ -13,22 +13,19 @@ var $$=function(el){
 	decode_element = function(el){
 		var splitter = /(?=\.|#|\[|\.|[a-zA-Z0-9]+;)/gi
 		var el_array = el.split(splitter);
-		console.log(el_array);
-		var el_obj = {attr:[]};
-		console.log(el.split(splitter));
+		var el_obj = {type: el_array[0]};
+
 		//build an object of the element
+
 		for(i in el_array){
 			var in_el=el_array[i];
-			console.log(in_el);
-			var split_in_el = in_el.split(/(#|\.|\[)/);
-			console.log(split_in_el);
+			var split_in_el = in_el.split(/(#|\.|\[)/).filter(Boolean);
 			if(split_in_el.length>1){
 				if(split_in_el[0]==='['){
-					console.log(in_el);
-					el_obj.attr.push(split_in_el[0]);
+					//clean up 
+					var split_clean=split_in_el[1].replace(']','').split(':');
+					el_obj[split_clean[0]]=split_clean[1];
 				}
-			} else {
-				el_obj['element']=in_el;
 			}
 		}
 		
@@ -37,14 +34,40 @@ var $$=function(el){
 	getElement=function(el){
 		
 		var el_obj = this.decode_element(el);
-		console.log(el_obj);
+		var elements_array=[]
 		for(i in config){
-			if(config[i].type==el_obj.element){
-				element=config[i];
-			console.log(element.pin);
-			return element;
+			if(config[i].type===el_obj.type){
+				elements_array.push(10);
+				var config_keys = Object.keys(config[i]);
+				config_keys=this.remove_items(config_keys,['pin','type']); //remove pin and type from measurements
+				console.log(config_keys);
+					for(k in config_keys){
+					console.log(config[i][config_keys[k]]+'=='+el_obj[config_keys[k]]);
+					
+					if(el_obj[config_keys[k]] && this.compare_node(config[i][config_keys[k]],el_obj[config_keys[k]])){
+							elements_array[i]+=5;
+					} 
+				
+				}
+			} else {
+				elements_array.push(0);
 			}
 		}
+		console.log(elements_array);
+		return best_match(elements_array);
+	},
+	best_match = function(elements_array){
+		return config[elements_array.indexOf(Math.max.apply(this,elements_array))];
+	}
+	remove_items= function(array,remove){
+		for(var i in remove){
+			array.splice(array.indexOf(remove[i]),1); // remove a list of items from an array
+		}
+		return array;
+	},
+	compare_node= function(config_item,el_item){
+		console.log(config_item+','+el_item);
+		return config_item===el_item;
 	},
 	open = function(){
 		gpio.read(element.pin,function(err,val){
