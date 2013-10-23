@@ -1,1 +1,1 @@
-[{"type":"leds","pin":16, "color":"red"},{"type":"led","pin":15,"color":"green"},{"type":"led","pin":18,"color":"blue"}]
+[{"type":"led","pin":16, "color":"red"},{"type":"led","pin":15,"color":"green"},{"type":"led","pin":18,"color":"blue"}]

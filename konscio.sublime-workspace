@@ -1,0 +1,524 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"div",
+				"div"
+			],
+			[
+				"co",
+				"color"
+			],
+			[
+				"toggle",
+				"toggleSettings"
+			],
+			[
+				"list-",
+				"list-style-type"
+			],
+			[
+				"orthogan",
+				"orthogonalize"
+			],
+			[
+				"orthogo",
+				"orthogonalize"
+			],
+			[
+				"filt",
+				"filteredBlocks"
+			],
+			[
+				"D",
+				"D"
+			],
+			[
+				"inde",
+				"is_independent"
+			],
+			[
+				"A",
+				"An"
+			],
+			[
+				"True",
+				"True"
+			],
+			[
+				"is",
+				"is_superfluous"
+			],
+			[
+				"a",
+				"a"
+			],
+			[
+				"i",
+				"if	If Condition"
+			],
+			[
+				"Subscr",
+				"SUBSCRIBER"
+			],
+			[
+				"conn",
+				"connectEmail"
+			],
+			[
+				"em",
+				"connectEmail"
+			],
+			[
+				"streamDestr",
+				"streamDestroyedHandler"
+			],
+			[
+				"re",
+				"removeEventListener"
+			],
+			[
+				"sess",
+				"sessionDisconnectedHandler"
+			],
+			[
+				"sessionCon",
+				"sessionConnectedHandler"
+			],
+			[
+				"add",
+				"addEventListener"
+			],
+			[
+				"I",
+				"Images"
+			],
+			[
+				"html",
+				"htmlparser"
+			],
+			[
+				"tweet",
+				"tweet"
+			],
+			[
+				"scope",
+				"scope"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/Users/pete/Documents/GitHub/konscio/config.json",
+		"/C/Users/pete/Documents/GitHub/konscio/module/module.js",
+		"/C/Users/pete/Documents/GitHub/konscio/index.js",
+		"/C/Users/pete/Documents/GitHub/konscio/spec/getElement-spec.js",
+		"/C/Ruby192/kitchon/app/models/cook.rb",
+		"/C/Ruby192/kitchon/app/models/food.rb",
+		"/C/Users/pete/AppData/Roaming/npm/node_modules/nougit/git.js",
+		"/C/Users/pete/Documents/GitHub/sentien/config.json",
+		"/C/Users/pete/Documents/GitHub/sentien/index.js",
+		"/C/Users/pete/AppData/Roaming/npm/node_modules/nougit/app.js",
+		"/C/Users/pete/Documents/GitHub/sentien/module/module.js",
+		"/C/Users/pete/Documents/GitHub/sentien/node_modules/underscore/underscore-min.js",
+		"/C/Users/pete/Documents/GitHub/sentien/node_modules/underscore/underscore.js",
+		"/C/Users/pete/Documents/GitHub/sentien/node_modules/underscore/package.json",
+		"/C/Users/pete/Documents/GitHub/sentien/node_modules/underscore/README.md",
+		"/C/Users/pete/Documents/GitHub/SpoiledGrapes/css/style.css",
+		"/C/Users/pete/Documents/GitHub/SpoiledGrapes/index.html",
+		"/C/Users/pete/Documents/GitHub/SpoiledGrapes/js/app.js",
+		"/C/Users/pete/Documents/GitHub/SpoiledGrapes/js/wines.json",
+		"/C/Users/pete/Downloads/My LinkedIn Resume.html",
+		"/C/Users/pete/Documents/GitHub/SpoiledGrapes/testing/SpecRunner.html",
+		"/C/Users/pete/Downloads/Wine.json",
+		"/C/Users/pete/Documents/GitHub/SpoiledGrapes/testing/spec/SelectWinesHelper.js",
+		"/C/Users/pete/Desktop/spoiledgrapes/Cab-Sav.txt",
+		"/C/Users/pete/Downloads/Wine (1).json",
+		"/C/Users/pete/Desktop/spotify_test.html",
+		"/C/Program Files (x86)/eclipse/eclipse.ini",
+		"/C/Users/pete/Desktop/eclipse.ini",
+		"/C/Program Files (x86)/eclipse/http",
+		"/C/Users/pete/Documents/GitHub/SpoiledGrapes/testing/spec/PlayerSpec.js",
+		"/C/Users/pete/Documents/GitHub/windows_idea/js/controllers.js",
+		"/C/Users/pete/Documents/GitHub/windows_idea/index.html",
+		"/C/Users/pete/Documents/GitHub/windows_idea/css/app.css",
+		"/C/Python33/ML-course/hw5/hw5.py",
+		"/C/Python33/ML-course/hw7/orthonormalization.py",
+		"/C/Python33/ML-course/hw7/vecutil.py",
+		"/C/Python33/ML-course/hw7/matutil.py",
+		"/C/Python33/ML-course/hw7/mat.py",
+		"/C/Python33/ML-course/hw7/vec.py",
+		"/C/Python33/ML-course/hw7/hw7.py",
+		"/C/Python33/ML-course/hw7/orthogonalization.py",
+		"/C/Python33/ML-course/hw7/independence.pyc",
+		"/C/Users/pete/Desktop/fizzbuzz.html",
+		"/C/Python33/ML-course/machine_learning_lab/vec.py",
+		"/C/Python33/ML-course/machine_learning_lab/machine_learning_lab.py",
+		"/C/Ruby192/keen/app/js/controller.js",
+		"/C/Users/pete/Desktop/birthday peeps",
+		"/C/Python33/ML-course/machine_learning_lab/mat.py",
+		"/C/Python33/ML-course/machine_learning_lab/matutil.py",
+		"/C/Python33/ML-course/machine_learning_lab/cancer_data.py",
+		"/C/Python33/ML-course/machine_learning_lab/train.data",
+		"/C/Python33/ML-course/machine_learning_lab/submit_machine_learning_lab.py",
+		"/C/Users/pete/AppData/Roaming/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
+		"/C/Users/pete/Documents/GitHub/windows_idea/tests/scenario.js",
+		"/C/Users/pete/Documents/GitHub/windows_idea/tests/runner.html",
+		"/C/Users/pete/Documents/GitHub/windows_idea/tests/angular-scenario.js",
+		"/C/Python33/ML-course/secret-sharing/secret_sharing_lab.py",
+		"/C/Users/pete/Documents/GitHub/windows_idea/js/angular.js",
+		"/C/Users/pete/Documents/GitHub/windows_idea/tests/unit/controllerSpec.js",
+		"/C/Users/pete/Documents/GitHub/windows_idea/scripts/testacular.conf.js",
+		"/C/Users/pete/Documents/GitHub/windows_idea/css/metro-bootstrap.css",
+		"/C/Python33/ML-course/secret-sharing/vecutil.py",
+		"/C/Python33/ML-course/secret-sharing/vec.py",
+		"/C/Users/pete/Documents/GitHub/windows_idea/scripts/test.sh",
+		"/C/Ruby192/keen/scripts/test.sh",
+		"/C/Users/pete/Documents/GitHub/windows_idea/scripts/test-server.bat",
+		"/C/Users/pete/Documents/GitHub/redant/scripts/test.bat",
+		"/C/Users/pete/Documents/GitHub/windows_idea/scripts/test.bat",
+		"/C/Users/pete/Documents/GitHub/redant/scripts/test.sh",
+		"/C/Users/pete/Documents/GitHub/windows_idea/tests/controllerSpec.js",
+		"/C/Users/pete/Documents/GitHub/windows_idea/js/angular.1.1.4.min.js",
+		"/C/Python33/ML-course/factoring_lab/factoring_lab.py",
+		"/C/Python33/ML-course/hw4/hw4.py",
+		"/C/Python33/ML-course/hw6/hw6.py",
+		"/C/Python33/ML-course/hw6/echelon.py",
+		"/C/Python33/ML-course/hw6/vec.py",
+		"/C/Python33/ML-course/hw3/hw3.py",
+		"/C/Python33/ML-course/hw6/hw5.py",
+		"/C/Python33/ML-course/hw6/mat.py",
+		"/C/Python33/ML-course/lab1/python_lab.py",
+		"/C/Ruby192/kitchon/Gemfile",
+		"/C/Python33/ML-course/hwo/hw0.py",
+		"/C/Python33/ML-course/hw2/hw2.py",
+		"/C/Python33/ML-course/hw6/submit_hw6.py",
+		"/C/Python33/ML-course/perspective_lab/perspective_lab.py",
+		"/C/Python33/ML-course/hw4/vecutil.py",
+		"/C/Python33/ML-course/hw4/vec.py",
+		"/C/Python33/ML-course/hw4/mat.py",
+		"/C/Python33/ML-course/hw4/matutil.py",
+		"/C/Python33/ML-course/hw5/matutil.py",
+		"/C/Python33/ML-course/image.py",
+		"/C/Python33/ML-course/hw5/independence.pyc",
+		"/C/Python33/ML-course/hw4/solver.pyc",
+		"/C/Python33/ML-course/hw4/GF2.py",
+		"/C/Python33/ML-course/mat/geometry_lab/mat.py",
+		"/C/Python33/ML-course/mat/geometry_lab/geometry_lab.py",
+		"/C/Python33/ML-course/mat/test_mat.py",
+		"/C/Python33/ML-course/mat/vec.py",
+		"/C/Python33/ML-course/mat/mat.py",
+		"/C/Python33/ML-course/hw3/mat.py",
+		"/C/Python33/ML-course/hw3/matutil.py",
+		"/C/Python33/ML-course/mat/matutil.py",
+		"/C/Users/pete/Downloads/plotting.py",
+		"/C/Python33/ML-course/mat/geometry_lab/imagey.py",
+		"/C/Python33/ML-course/mat/geometry_lab/image_mat_util.py",
+		"/C/Python33/ML-course/ecc_lab/ecc_lab.py",
+		"/C/Users/pete/Desktop/tmpfl7fqg.html",
+		"/C/Python33/ML-course/mat/geometry_lab/image.py",
+		"/C/Python33/ML-course/lab1/homework.txt",
+		"/C/Python33/ML-course/vec/vec.py",
+		"/C/Users/pete/Desktop/mat.py",
+		"/C/Users/pete/Documents/GitHub/opentok/app.js",
+		"/C/Users/pete/Documents/GitHub/opentok/js/opentok.js",
+		"/C/Python33/ML-course/mat/submit_mat.py",
+		"/C/Users/pete/Documents/GitHub/opentok/views/index.jade",
+		"/C/Users/pete/AppData/Local/Temp/Temp1_opentok-sample-code.zip/basictutorial.html",
+		"/C/Users/pete/AppData/Local/Temp/Temp1_hinterview.zip/js/opentok.js",
+		"/C/Users/pete/AppData/Local/Temp/Temp1_hinterview.zip/views/index.jade",
+		"/C/Users/pete/Documents/GitHub/cld-tweets/js/app.js",
+		"/C/Users/pete/Documents/GitHub/cld-tweets/app.js",
+		"/C/Users/pete/Documents/GitHub/cld-tweets/index.html",
+		"/C/Users/pete/Documents/GitHub/opentok/readme.md",
+		"/C/Users/pete/Documents/GitHub/opentok/package.json",
+		"/C/Users/pete/Documents/GitHub/opentok/public/css/style.css",
+		"/C/Users/pete/Documents/GitHub/opentok/node_modules/socket.io/index.js",
+		"/C/Users/pete/Documents/GitHub/opentok/socketapp.js",
+		"/C/Users/pete/Documents/GitHub/opentok/node_modules/socket.io-client/bin/builder.js",
+		"/C/Users/pete/Documents/GitHub/opentok/node_modules/socket.io/lib/socket.io.js"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"remove_items",
+			"element",
+			"led",
+			"wines",
+			"WineRoute",
+			"WinesRoute",
+			"slice",
+			"App.ApplicationController = Ember.Controller.extend({\n	selectedVariety: null,\n	varietals: App.Varietals\n});",
+			".\n",
+			"actions",
+			"score",
+			"variety",
+			"controller",
+			"song3",
+			"transpose",
+			"neg",
+			"in",
+			"notifications",
+			"'images/",
+			"/images",
+			"transform",
+			"ani",
+			"animat",
+			"animate",
+			"bing",
+			"10px",
+			"\"\"",
+			"double",
+			"double:app.",
+			"pageView",
+			"double",
+			"appView",
+			"pageView",
+			"setPageView",
+			"appView",
+			"#appView",
+			"ng-click",
+			"app",
+			"store-apps",
+			"file-results",
+			"xce",
+			"xcer",
+			"taskbar",
+			"file-system",
+			"h1",
+			"padding-left",
+			"padding-left:",
+			".h2",
+			".document",
+			"word-header",
+			"animateApp",
+			"help",
+			"z-index",
+			"icon",
+			".close",
+			"z-index",
+			"#apps",
+			"settings",
+			"#desktop",
+			"desktop",
+			"scroll",
+			"modal",
+			"desktop",
+			"grey",
+			"desktop",
+			"setAppView",
+			"scale",
+			"setAppView",
+			"store-apps",
+			"settings",
+			"search.name",
+			"'search.name",
+			"search",
+			"setAppView",
+			"search",
+			"file-results",
+			"scroll-apps",
+			"app-view",
+			"modal-cover",
+			"modal",
+			"animateApp",
+			"flip",
+			"animateApp",
+			"grow",
+			"openpage",
+			"open",
+			"grow",
+			"double",
+			"search",
+			"hover",
+			"searc",
+			"searcj",
+			"h1",
+			"search",
+			"temp",
+			"name",
+			"primeset",
+			"1,",
+			"rspec",
+			"image",
+			"solve",
+			"solver",
+			"solve",
+			"list2vec",
+			"list2",
+			"list2vec",
+			"u",
+			"png",
+			"find_error",
+			"mat2",
+			"assert",
+			"from mat import Mat",
+			"scalar_mul",
+			".\n",
+			"def mat(",
+			"mat",
+			"userDetails",
+			"destroyed",
+			"sessionDestroyed",
+			"disconnected",
+			"addStream",
+			"streamCreated",
+			"session",
+			"streamDestroyed",
+			"addStream",
+			"var mySession",
+			"session",
+			"addStream"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"'../images/",
+			"images",
+			"\"name\"",
+			"one,",
+			"one",
+			""
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 27.0
+	},
+	"input":
+	{
+		"height": 35.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 43.0
+	},
+	"project": "konscio.sublime-project",
+	"replace":
+	{
+		"height": 64.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"/",
+				"C:\\Ruby192\\kitchon\\Gemfile"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": false,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
