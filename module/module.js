@@ -15,6 +15,7 @@ var $$=function(el){
 function Konscio(el){
 	this.el = el;
 	this.element;
+	that = this;
 	return this.init();
 }
 Konscio.prototype = {
@@ -82,11 +83,12 @@ open : function(){
 	//	}
 	},
 	on : function(){
-		console.log(this.element.pin);
-		gpio.open(this.element.pin,"output",function(err){	
-			gpio.write(this.element.pin,1,function(err){
+		console.log(that.element.pin);
+		
+		gpio.open(that.element.pin,"output",function(err){	
+			gpio.write(that.element.pin,1,function(err){
 				console.log('should be on now');
-				gpio.close(this.element.pin);
+				gpio.close(that.element.pin);
 			});
 		});
 	
