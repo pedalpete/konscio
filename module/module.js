@@ -8,12 +8,22 @@ var config = JSON.parse(fs.readFileSync("./config.json"));
 
 
 var $$=function(el){
-	this.elements=[];
+	var new_el = new Konscio(el);
+	return new_el;
 }
 
-$$.prototype.decode_element = function(el){
+function Konscio(el){
+	this.el = el;
+	this.element;
+	return this.init();
+}
+Konscio.prototype = {
+	init: function(){
+		this.element = this.get_element(this.el);
+	},
+	decode_element : function(){
 		var splitter = /(?=\.|#|\[|\.|[a-zA-Z0-9]+;)/gi
-		var el_array = el.split(splitter);
+		var el_array = this.el.split(splitter);
 		var el_obj = {type: el_array[0]};
 
 		//build an object of the element
@@ -31,27 +41,28 @@ $$.prototype.decode_element = function(el){
 		}
 		
 		return el_obj;
-}
+	},
 	
-$$.prototype.get_element=function(el){
-		var el_obj = this.decode_element(el);
+	get_element: function(){
+		var el_obj = this.decode_element(this.el);
 		var elements_array=[]
 		for(var i in config){
 			elements_array.push(this.compare_node(config[i],el_obj));
 	}
+	this.element=elements_array;
 	return this.best_match(elements_array);
-}
+},
 
-$$.prototype.best_match = function(elements_array){
+best_match : function(elements_array){
 		return config[elements_array.indexOf(true)];
-	}
-$$.prototype.remove_items= function(array,remove){
+	},
+remove_items : function(array,remove){
 		for(var i in remove){
 			array.splice(array.indexOf(remove[i]),1); // remove a list of items from an array
 		}
 		return array;
-	}
-$$.prototype.compare_node= function(config_item,el_obj){
+	},
+compare_node : function(config_item,el_obj){
 		var obj_keys=Object.keys(el_obj);
 		for(var k in obj_keys){
 			if(config_item[obj_keys[k]]!=el_obj[obj_keys[k]]){
@@ -59,8 +70,8 @@ $$.prototype.compare_node= function(config_item,el_obj){
 			}
 		}
 		return true;
-	}
-	open = function(){
+	},
+open : function(){
 		gpio.read(element.pin,function(err,val){
 			if(err) console.log(err);
 			console.log(val);	
@@ -69,19 +80,18 @@ $$.prototype.compare_node= function(config_item,el_obj){
 				console.log(err);
 			});
 	//	}
-	}
-	on = function(){
-		
-		gpio.open(element.pin,"output",function(err){	
-			this.getVal();
-			gpio.write(element.pin,1,function(err){
+	},
+	on : function(){
+		console.log(this.element.pin);
+		gpio.open(this.element.pin,"output",function(err){	
+			gpio.write(this.element.pin,1,function(err){
 				console.log('should be on now');
-				gpio.close(element.pin);
+				gpio.close(this.element.pin);
 			});
 		});
 	
-	}
-	off = function(){
+	},
+	off : function(){
 		gpio.open(element.pin,"output",function(err){
 			gpio.write(element.pin,0,function(err){
 				this.getVal();
@@ -89,8 +99,8 @@ $$.prototype.compare_node= function(config_item,el_obj){
 				gpio.close(element.pin);
 			});
 		});
-	}
-	getVal = function(){
+	},
+	get : function(){
 		return gpio.read(element.pin,function(err,value){
 			if(err) console.log(err);
 			val = value
@@ -98,7 +108,7 @@ $$.prototype.compare_node= function(config_item,el_obj){
 			return value;
 		});
 	}
-
+}
 
 
 

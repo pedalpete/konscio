@@ -1,7 +1,8 @@
 var $$=require("./module/module.js");
 console.log("starting");
-$$("led[color:blue]").on();
-
+var get_element = $$("led[color:blue]");
+console.log(get_element);
+get_element.on();
 //setTimeout(function(){
 //	$$("led").off();
 //},3000);
