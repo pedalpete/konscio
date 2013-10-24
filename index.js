@@ -7,7 +7,7 @@ setTimeout(function(){
 	get_element.off();
 },3000);
 
-setTimeout(function(){/
+setTimeout(function(){
 	$$("led[color:red]").on();
 },4000);
 
