@@ -94,11 +94,10 @@ open : function(){
 	
 	},
 	off : function(){
-		gpio.open(element.pin,"output",function(err){
-			gpio.write(element.pin,0,function(err){
-				this.getVal();
-				console.log('should be off now');
-				gpio.close(element.pin);
+		gpio.open(that.element.pin,"output",function(err){
+			gpio.write(that.element.pin,0,function(err){
+					console.log('should be off now');
+				gpio.close(that.element.pin);
 			});
 		});
 	},
