@@ -114,3 +114,4 @@ open : function(){
 
 
 module.exports=$$;
+module.exports.Konscio = Konscio;

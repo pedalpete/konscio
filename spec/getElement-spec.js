@@ -4,7 +4,7 @@ var config = [{"type":"led","pin":16, "color":"red"},{"type":"led","pin":15,"col
 
 describe("decode element",function(){
 	it("should return the second object in the config",function(){
-		var pin_obj = $$.decode_element("led[color:green]");
+		var pin_obj = new $$.Konscio("led[color:green]").decode_element();
 		expect(pin_obj.type).toBe('led');
 		expect(pin_obj.color).toBe('green');
 	})
@@ -13,14 +13,14 @@ describe("decode element",function(){
 
 describe("get element number", function(){
 	it("should return the pin number of the red pin", function(){
-		var pin_obj = $$.get_element("led[color:blue]");
-		expect(pin_obj.pin).toBe(18);
+		var pin_obj = new $$.Konscio("led[color:red]").get_element();
+		expect(pin_obj.pin).toBe(16);
 	})
 });
 
 describe("remove items from array", function(){
 	it("should return array with only two items",function(){
-		var item_list = $$.remove_items([1,2,3,4],[1,2]);
+		var item_list =new $$.Konscio("led[color:red]").remove_items([1,2,3,4],[1,2]);
 		expect(item_list.length).toBe(2);
 		expect(item_list[0]).toBe(3);
 
@@ -29,17 +29,17 @@ describe("remove items from array", function(){
 
 describe("compare nodes to find matches",function(){
 	it("should return true if nodes match",function(){
-		var node_match = $$.compare_node({a:1,b:6,c:2,d:5},{a:1,c:2,d:5});
+		var node_match = new $$.Konscio("led[color:red]").compare_node({a:1,b:6,c:2,d:5},{a:1,c:2,d:5});
 		expect(node_match).toBe(true);
 	});
 
 	it("should return false if nodes don't match on values",function(){
-		var node_match2 = $$.compare_node({a:1,b:23,c:3},{a:1,b:2,c:3});
+		var node_match2 = new $$.Konscio("led[color:red]").compare_node({a:1,b:23,c:3},{a:1,b:2,c:3});
 		expect(node_match2).toBe(false);
 	});
 
 	it("should return false config node does not have attribute",function(){
-		var node_match2 = $$.compare_node({a:1,b:2,c:3},{a:1,b:2,c:3, d:5});
+		var node_match2 = new $$.Konscio("led[color:red]").compare_node({a:1,b:2,c:3},{a:1,b:2,c:3, d:5});
 		expect(node_match2).toBe(false);
 	});
 });
