@@ -1,5 +1,4 @@
 var $$=require("./module/module.js");
-console.log("starting");
 var get_element = $$("led[color:blue]");
 console.log(get_element);
 get_element.on();

@@ -1,13 +1,13 @@
 var $$=require("../module/module.js");
+$$.Env('dev'); // setup for testing
 var fs = require("fs");
-var config = [{"type":"led","pin":16, "color":"red"},{"type":"led","pin":15,"color":"green"},{"type":"led","pin":18,"color":"blue"}]
 
-describe("decode element",function(){
+describe("decode element", function(){
 	it("should return the second object in the config",function(){
 		var pin_obj = new $$.Konscio("led[color:green]").decode_element();
 		expect(pin_obj.type).toBe('led');
 		expect(pin_obj.color).toBe('green');
-	})
+	});
 });
 
 

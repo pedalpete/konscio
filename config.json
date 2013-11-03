@@ -1,1 +1,1 @@
-[{"type":"led","pin":16, "color":"red"},{"type":"led","pin":15,"color":"green"},{"type":"led","pin":18,"color":"blue"}]
+{"name":"tri-color_led", "abilities":[{"type":"led","pin":16, "interface":"gpio","color":"red"},{"type":"led","pin":15,"interface":"gpio","color":"green"},{"type":"led","pin":18,"interface":"gpio","color":"blue"}]}
