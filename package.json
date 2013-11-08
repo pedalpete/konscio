@@ -1,0 +1,11 @@
+{
+  "name": "konscio",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "dependencies": {
+    "socket.io-client":"*"
+  }
+}
