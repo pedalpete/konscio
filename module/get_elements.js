@@ -1,5 +1,7 @@
 var fs = require("fs");
 var config = JSON.parse(fs.readFileSync("./config.json"));
+var exec = require('child_process').exec;
+
 function Konscio(el){
 	this.el = el;
 	this.element;
@@ -60,7 +62,7 @@ compare_node : function(config_item,el_obj){
 		}
 		return true;
 	},
-open : function(){
+	open : function(){
 		gpio.read(element.pin,function(err,val){
 			if(err) console.log(err);
 			console.log(val);	
@@ -90,13 +92,48 @@ open : function(){
 		});
 	},
 	get : function(){
+		switch(element.interface)
+		{
+		case "GPIO": 
+			return read_gpio();
+			break;
+		case "w1":
+			return read_w1();
+			break;
+		default:
+			return "error, no interface method matches "+element.interface;
+		}
+
+	},
+	read_gpio: function(){
 		return gpio.read(element.pin,function(err,value){
-			if(err) console.log(err);
-			val = value
-			console.log('in read '+value);
-			return value;
+				if(err) console.log(err);
+				val = value
+				console.log('in read '+value);
+				return value;
+			});
+	},
+	read_w1: function(){
+		exec('cat /sys/bus/w1/devices/'+element.pin+'/w1_slave',function(error, stdout, sterror){
+			var return_value;
+			if(error != null){
+				console.log("Error reading w1: "+error);
+			}
+			switch(element.type)
+			{
+				case "temperature":
+					return_value = format_temperature(stdout);
+					break;
+				default:
+					return_value = stdout;
+			}
+			return return_value;
 		});
+	},
+	format_temperature: function(number){
+		return parseFloat(number/1000).toFixed(2);
 	}
+
 }
 
 module.exports=Konscio;

@@ -43,3 +43,10 @@ describe("compare nodes to find matches",function(){
 		expect(node_match2).toBe(false);
 	});
 });
+
+describe("Get Temperature", function(){
+	it("should format a number into a temperature",function(){
+		var get_element = new $$.Konscio("temperature");
+		expect(parseFloat(get_element.format_temperature(31200))).toEqual(31.20);
+	})
+})

@@ -1,1 +1,5 @@
-{"name":"tri-color_led", "abilities":[{"type":"led","pin":16, "interface":"gpio","color":"red"},{"type":"led","pin":15,"interface":"gpio","color":"green"},{"type":"led","pin":18,"interface":"gpio","color":"blue"}]}
+{"name":"tri-color_led", 
+	"abilities":[{"type":"led","pin":16, "interface":"gpio","color":"red"},
+				{"type":"led","pin":15,"interface":"gpio","color":"green"},
+				{"type":"led","pin":18,"interface":"gpio","color":"blue"},
+				{"type":"temperature","pin":"28-000004acb882", "interface":"w1"}]}

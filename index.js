@@ -14,6 +14,15 @@ setTimeout(function(){
 	$$("led[color:green]").on();
 	console.log('finished');
 },6000);
+
+
+var temperature_loop = 0;
+while(temperature_loop<10){
+	setTimeout(function(){
+		console.log("Temperature is "+$$("temperature").get()" degrees celsius");
+		temperature_loop++;
+	},1000);
+}
 console.log('done');
 
 
