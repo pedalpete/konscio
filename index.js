@@ -1,4 +1,5 @@
 var $$=require("./module/module.js");
+var connection =  new $$.Connect();
 var get_element = $$("led[color:blue]");
 console.log(get_element);
 get_element.on();
