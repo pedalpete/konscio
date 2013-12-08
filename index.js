@@ -20,7 +20,8 @@ setTimeout(function(){
 var temperature_loop = 0;
 while(temperature_loop<10){
 	setTimeout(function(){
-		console.log("Temperature is "+$$("temperature").get()" degrees celsius");
+		var temperature = $$('temperature').get();
+		console.log("Temperature is "+temperature+" degrees celsius");
 		temperature_loop++;
 	},1000);
 }
