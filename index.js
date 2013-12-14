@@ -1,5 +1,6 @@
 var env = process.argv[0] || 'prod';
-var $$=require("./module/module.js");
+var app=require("./module/module.js");
+var $$= new App(env);
 var connection =  new $$.Connect();
 var get_element = $$("led[color:blue]");
 console.log(get_element);
